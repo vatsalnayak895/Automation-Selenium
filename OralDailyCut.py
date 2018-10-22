@@ -15,8 +15,8 @@ browser = webdriver.Chrome(chrome_options=chrome_options,executable_path=r"G:\\F
 
 browser.get("https://sdl2.na.pg.com:4443/analytics/saw.dll?Dashboard")
 
-browser.find_element_by_id('sawlogonuser').send_keys('karri.k')
-browser.find_element_by_id('sawlogonpwd').send_keys('Ravitej2')
+browser.find_element_by_id('sawlogonuser').send_keys('username')
+browser.find_element_by_id('sawlogonpwd').send_keys('pass')
 browser.find_element_by_id('idlogon').click()
 
 
@@ -83,7 +83,7 @@ browser = webdriver.Chrome(chrome_options=chrome_options,executable_path=r"G:\\F
 
 browser.get("https://sdl2.na.pg.com:4443/analytics/saw.dll?Dashboard")
 
-browser.find_element_by_id('sawlogonuser').send_keys('karri.k')
+browser.find_element_by_id('sawlogonuser').send_keys('username')
 browser.find_element_by_id('sawlogonpwd').send_keys('Ravitej2')
 browser.find_element_by_id('idlogon').click()
 
