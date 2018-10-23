@@ -1,0 +1,25 @@
+Option Explicit
+
+On Error Resume Next
+
+
+
+WScript.Echo "The Script has Started for Oral Care Report."
+
+
+  Dim xlApp1 
+  Dim xlBook1
+
+  Set xlApp1 = CreateObject("Excel.Application") 
+  Set xlBook1 = xlApp1.Workbooks.Open("Path\file_name.xlsm", 0, False)  # opening the macro
+  xlApp1.Run "Macro_name"												# triggering macro
+
+
+xlBook1.Close False
+set xlBook1 = Nothing
+
+xlApp1.Quit
+Set xlApp1 = Nothing
+
+WScript.Echo "The Script has Finished for Oral Care Report."
+WScript.Quit
